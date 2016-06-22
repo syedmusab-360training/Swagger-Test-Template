@@ -1,0 +1,38 @@
+{
+  "name": "swagger-test",
+  "version": "0.3.0",
+  "description": "Specification-driven REST API testing",
+  "main": "lib/swagger-test.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha --report lcovonly -- -R spec",
+    "coveralls": "cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/earldouglas/swagger-test"
+  },
+  "keywords": [
+    "swagger",
+    "specification",
+    "spec",
+    "testing",
+    "test"
+  ],
+  "author": "James Earl Douglas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earldouglas/swagger-test/issues"
+  },
+  "homepage": "https://github.com/earldouglas/swagger-test",
+  "dependencies": {
+    "url-template": "2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "2.1.0",
+    "chai": "1.10.0",
+    "istanbul": "0.3.5",
+    "mocha-lcov-reporter": "0.0.1",
+    "coveralls": "2.11.2"
+  }
+}
