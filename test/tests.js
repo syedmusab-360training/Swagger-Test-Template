@@ -26,7 +26,7 @@ describe('test generation with inference', function () {
               "uri": "localhost/v1/pets"
           },
           "response": {
-              "status": 400,
+              "status": 200,
               "headers": {
                   "content-type": "application/json"
               }
